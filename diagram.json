@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "Who Knows",
+  "author": "Anonymous maker",
   "editor": "wokwi",
   "parts": [
     { "type": "wokwi-breadboard-half", "id": "bb1", "top": -233.4, "left": 31.6, "attrs": {} },
@@ -34,6 +34,13 @@
       "top": -185.6,
       "left": 485.6,
       "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 25.4,
+      "left": -115.2,
+      "attrs": { "color": "green", "xray": "1" }
     }
   ],
   "connections": [
@@ -53,7 +60,9 @@
     [ "led1:A", "bb1:13b.g", "", [ "$bb" ] ],
     [ "led1:C", "bb1:12b.g", "", [ "$bb" ] ],
     [ "r1:1", "bb1:13b.i", "", [ "$bb" ] ],
-    [ "r1:2", "bb1:19b.i", "", [ "$bb" ] ]
+    [ "r1:2", "bb1:19b.i", "", [ "$bb" ] ],
+    [ "btn1:2.l", "uno:GND.3", "green", [ "h-9.6", "v211.4", "h322.4" ] ],
+    [ "btn1:1.r", "uno:2", "green", [ "v-48", "h303.3" ] ]
   ],
   "dependencies": {}
 }
