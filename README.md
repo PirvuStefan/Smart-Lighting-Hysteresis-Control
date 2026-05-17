@@ -3,6 +3,9 @@
 
 This project is a small Arduino-based light sensing and control system that reads a photoresistor (LDR) and controls an LED based on ambient light. It also shows status and readings on a 16x2 I2C LCD and allows switching between two operating modes using a push button.
 
+<img width="1129" height="526" alt="Screenshot 2026-05-16 at 21 17 10" src="https://github.com/user-attachments/assets/4ff57294-a65b-432e-8c96-21dde25254b0" />
+
+
 The code in `sketch.ino` implements a hysteresis-based controller with two modes:
 - NOAPTE (night): the LED turns ON when it gets dark below a lower threshold and turns OFF when it becomes bright above an upper threshold.
 - ZI (day): the LED behavior is inverted (LED ON when bright).
